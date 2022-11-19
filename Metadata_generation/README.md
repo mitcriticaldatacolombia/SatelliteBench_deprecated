@@ -42,51 +42,56 @@ In order to create a customized dataset, please update `config.py` with the corr
 ## Metadata organization: 
 
 ```
-{ 
-      {
-      "image_path": "DATASET/images/50001/image_2016-01-03.tiff",
-      "municipality_code": 50001,
-      "date": 201601,
-      "labels": {
-            "cases": 27,
-            "binary_classification": 0,
-            "multiclass": 0
-      },
-      "metadata": {
+{
+      "image_path": "DATASET/images/41001/image_2016-01-03.tiff",
+      "municipality_code": 41001,
+      "epiweeks": 201601,
+      "dynamic": {
+            "cases": {
+                  "dengue_cases": 63,
+                  "binary_classification": 1,
+                  "multiclass": 0
+            },
             "environmental_data": {
                   "temperature": [
-                        29.906313774134105
+                        27.47078427209743
                   ],
                   "precipitation": [
-                        0.0346768693251678
-                  ],
-                  "elevation": 323.0
+                        5.705897276864907
+                  ]
             },
             "socioeconomic_data": {
-                  "Population": 512787,
-                  "Age0-4(%)": 6.82,
-                  "Age5-14(%)": 26.75,
-                  "Age>30(%)": 50.63,
-                  "AfrocolombianPopulation(%)": 0.93,
-                  "IndianPopulation(%)": 0.36,
-                  "PeoplewithDisabilities(%)": 4.33,
-                  "Peoplewhocannotreadorwrite(%)": 3.22,
-                  "Secondary/HigherEducation(%)": 62.3,
-                  "Employedpopulation(%)": 40.08,
-                  "Unemployedpopulation(%)": 5.75,
-                  "Peopledoinghousework(%)": 12.71,
-                  "Men(%)": 49.33,
-                  "Women(%)": 50.67,
-                  "Householdswithoutwateraccess(%)": 5.99,
-                  "Householdswithoutinternetaccess(%)": 36.51,
-                  "Buildingstratification1(%)": 21.672,
-                  "Buildingstratification2(%)": 21.0672,
-                  "Buildingstratification3(%)": 27.9166,
-                  "Buildingstratification4(%)": 3.6941,
-                  "Buildingstratification5(%)": 1.5769,
-                  "Buildingstratification6(%)": 0.4983,
-                  "NumberofhospitalsperKm2": 0.173648,
-                  "NumberofhousesperKm2": 111.006093
+                  "Population": 351933
+            }
+      },
+      "static": {
+            "environmental_data": {
+                  "elevation": 460.0
+            },
+            "socioeconomic_data": {
+                  "Age0-4(%)": 7.33,
+                  "Age5-14(%)": 25.62,
+                  "Age>30(%)": 51.86,
+                  "AfrocolombianPopulation(%)": 0.63,
+                  "IndianPopulation(%)": 0.32,
+                  "PeoplewithDisabilities(%)": 7.9,
+                  "Peoplewhocannotreadorwrite(%)": 4.0,
+                  "Secondary/HigherEducation(%)": 62.42,
+                  "Employedpopulation(%)": 38.83,
+                  "Unemployedpopulation(%)": 5.54,
+                  "Peopledoinghousework(%)": 14.72,
+                  "Men(%)": 47.86,
+                  "Women(%)": 52.14,
+                  "Householdswithoutwateraccess(%)": 2.44,
+                  "Householdswithoutinternetaccess(%)": 33.99,
+                  "Buildingstratification1(%)": 23.1001,
+                  "Buildingstratification2(%)": 38.5433,
+                  "Buildingstratification3(%)": 8.2185,
+                  "Buildingstratification4(%)": 4.0139,
+                  "Buildingstratification5(%)": 0.8625,
+                  "Buildingstratification6(%)": 0.0719,
+                  "NumberofhospitalsperKm2": 0.10367,
+                  "NumberofhousesperKm2": 63.426272
             }
       }
 }
